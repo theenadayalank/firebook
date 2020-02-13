@@ -1,0 +1,71 @@
+<form class=" div-center"style="margin-top : 50px; width : 800px">
+    <div style="padding:5px;">
+      <div class="form">
+        <div class="text-center">
+          <h2>Sign Up</h2>
+        </div>
+        <div class="selection-title-divider"></div>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>First Name</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="text" class="form-control" value=firstName placeholder="First Name"}}
+          </div>
+        </div><br>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>Last Name</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="text" class="form-control" value=lastName placeholder="Last Name"}}
+          </div>
+        </div><br>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>Mobile</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="text" class="form-control" value=mobile placeholder="Mobile"}}
+          </div>
+        </div><br>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>Address</label>
+          </div>
+          <div class="col-sm-6">
+            {{textarea type="text" class="form-control" value=address placeholder="Address"}}
+          </div>
+        </div><br>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>Email</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="text" class="form-control" value=email placeholder="Email"}}
+          </div>
+        </div><br>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>Password</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="password" class="form-control disabled" value=password placeholder="Password"}}
+          </div>
+        </div><br>
+        <div class="text-center">
+        <button type="submit" class="btn btn-outline-info {{if isLoading 'disabled'}}"  {{action "createUser"}}>Submit</button><br><br>
+        <div>
+          Already having an account? Click {{#link-to 'login'}}here{{/link-to}}
+        </div>
+      </div><br><br>
+      </div>
+    </div>
+
+</form>

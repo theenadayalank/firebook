@@ -1,0 +1,45 @@
+{{#if session.isAuthenticated}}
+
+<!-- Nav Bar-->
+<div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+
+    <!-- Button to trigger modal -->
+    <a class="navbar-brand" href="#" data-toggle="modal" data-target="#model">FireBook</a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="model">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">FireBook</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            A Web App for sharing Posts!!
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href="" {{action "posts"}}>Home</a>
+        <a class="nav-item nav-link" href="" {{action "profile"}}>Account</a><
+        <a class="nav-item nav-link" href="" {{action "about"}}>About</a>
+        <a class="nav-item nav-link" href="" {{action "logout"}}>
+          {{inline-svg 'logout' class="svg svg-hover"}}
+        </a>
+    </div>
+
+</div>
+
+{{/if}}
+{{outlet}}

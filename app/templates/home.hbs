@@ -1,0 +1,42 @@
+<!--First Section-->
+<div class="text-center" style="margin-top : 10px;">
+  <h2 class="text-center">Welcome to FireBook</h2>
+  Hi <b>{{model.use.fullName}}! </b> <br><br>
+  <button class="btn btn-sm btn-outline-success" {{action 'goNewPost'}}>+New Post</button>
+  <br><br>
+</div>
+<hr>
+
+<!--Second Section-->
+<div class="div-width">
+  <!-- All Posts-->
+  <div>
+    <h4 class="text-center">All Posts</h4>
+  </div>
+
+  <div class="selection-title-divider"></div>
+
+  <div class="post-container">
+    {{#each model.pos as |post|}}
+      <div class="post-card">
+        <div class="post-card-header">
+          {{post.title}}
+        </div>
+        <div class="post-card-content">
+          <div class="post-card-body">
+            <p>{{post.body}}</p>
+          </div>
+          <div class="post-card-footer small text-muted">
+            <span>
+              {{link-to 'View Post' 'viewpost' post.id}}
+            </span>
+            <span>{{to-date-string  post.createdtime}}</span>
+          </div>
+        </div>
+      </div>
+    {{else}}
+      <p class="text-center">No Posts! Try After Some Time.</p>
+    {{/each}}
+  </div>
+</div>
+{{outlet}}

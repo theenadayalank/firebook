@@ -1,0 +1,32 @@
+<form class="div-center"style="margin-top : 50px; width : 800px">
+    <div style="padding:5px;">
+        <div class="text-center">
+          <h2>Login</h2>
+        </div>
+        <div class="selection-title-divider"></div>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>User name</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="text" class="form-control" value=userEmail placeholder="User Name"}}
+          </div>
+        </div><br>
+        <div class="row" style="margin-top:5px;">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-4">
+            <label>Password</label>
+          </div>
+          <div class="col-sm-6">
+            {{input type="password" class="form-control" value=userPassword placeholder="Password" }}
+          </div>
+        </div><br><br>
+        <div class="text-center">
+        <button type="submit" class="btn btn-outline-info {{if isLoading 'disabled'}}" {{action "login"}}>Login</button><br><br>
+        <div>
+          Don't you have an Account? Click {{#link-to 'signup'}}here{{/link-to}}
+        </div>
+      </div><br><br>
+    </div>
+</form>

@@ -1,0 +1,42 @@
+<div style="margin-top : 50px; padding:5px;">
+  <div class="text-center">
+    <h2>Create New Post</h2>
+  </div>
+
+  <div class="selection-title-divider"></div>
+
+  <form {{action "toPublish" model on="submit"}}>
+
+    <div class="row" style="margin-top:5px;">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <label>Title</label>
+      </div>
+      <div class="col-sm-4">
+        {{input value=title placeholder="Title" required=true}}
+      </div>
+      <div class="col-sm-2"></div>
+    </div><br>
+
+    <div class="row" style="margin-top:5px;">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <label>Content</label>
+      </div>
+      <div class="col-sm-4">
+        {{textarea value=body placeholder="Body" rows="10" cols="50"  required=true}}
+      </div>
+      <div class="col-sm-2"></div>
+    </div><br><br>
+
+    <div class="text-center">
+      <p>
+        <button type="submit" class="btn btn-outline-primary" >Publish</button>
+        <button type="button" class="btn btn-outline-warning" {{action "toCancel"}}>Cancel</button>
+      </p>
+    </div>
+
+  </form>
+
+<br><br>
+</div>
