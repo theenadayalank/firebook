@@ -11,15 +11,15 @@
   </div>
   <div class="view-post-footer text-muted">
     <span class="view-post-utils">
-      {{#link-to 'home' class="btn btn-secondary btn-sm"}}
+      <LinkTo @route="home" class="btn btn-secondary btn-sm">
         {{inline-svg 'back' class='svg svg-sm'}}
         Back
-      {{/link-to}}
+      </LinkTo>
       &nbsp;
-      {{#link-to 'editpost' model.id class="btn btn-info btn-sm"}}
+      <LinkTo @route="editpost" @model={{model.id}} class="btn btn-info btn-sm">
         {{inline-svg 'edit' class='svg svg-sm'}}
         Edit Post
-      {{/link-to}}
+      </LinkTo>
     </span>
     <span>Last Modified {{to-date-string model.modifiedtime}}</span>
   </div>

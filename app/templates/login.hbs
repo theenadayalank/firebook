@@ -10,7 +10,7 @@
             <label>User name</label>
           </div>
           <div class="col-sm-6">
-            {{input type="text" class="form-control" value=userEmail placeholder="User Name"}}
+            <Input @type="text" class="form-control" @value={{userEmail}} placeholder="User Name" />
           </div>
         </div><br>
         <div class="row" style="margin-top:5px;">
@@ -19,13 +19,13 @@
             <label>Password</label>
           </div>
           <div class="col-sm-6">
-            {{input type="password" class="form-control" value=userPassword placeholder="Password" }}
+            <Input @type="password" class="form-control" @value={{userPassword}} placeholder="Password" />
           </div>
         </div><br><br>
         <div class="text-center">
         <button type="submit" class="btn btn-outline-info {{if isLoading 'disabled'}}" {{action "login"}}>Login</button><br><br>
         <div>
-          Don't you have an Account? Click {{#link-to 'signup'}}here{{/link-to}}
+          Don't you have an Account? Click <LinkTo @route="signup">here</LinkTo>
         </div>
       </div><br><br>
     </div>

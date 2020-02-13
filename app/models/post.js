@@ -1,11 +1,11 @@
-import DS from 'ember-data';
+import Model, { attr } from '@ember-data/model';
 
-export default DS.Model.extend({
-  title: DS.attr('string'),
-  body: DS.attr('string'),
-  createdtime: DS.attr('date'),
-  modifiedtime: DS.attr('date', {
+export default Model.extend({
+  title: attr('string'),
+  body: attr('string'),
+  createdtime: attr('date'),
+  modifiedtime: attr('date', {
     defaultValue() { return new Date(); }
   }),
-  owner: DS.attr('string')
+  owner: attr('string')
 });

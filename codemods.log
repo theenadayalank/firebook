@@ -1,0 +1,7 @@
+2020-02-13T19:34:13.508Z [warn] WARNING: {{to-date-string}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/home.hbs
+2020-02-13T19:34:15.376Z [warn] WARNING: {{inline-svg}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/components/view-post.hbs
+2020-02-13T19:34:15.379Z [warn] WARNING: {{inline-svg}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/components/view-post.hbs
+2020-02-13T19:34:15.380Z [warn] WARNING: {{to-date-string}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/components/view-post.hbs
+2020-02-13T19:34:15.439Z [warn] WARNING: {{inline-svg}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/about.hbs
+2020-02-13T19:34:15.453Z [warn] WARNING: {{inline-svg}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/about.hbs
+2020-02-13T19:34:15.454Z [warn] WARNING: {{inline-svg}} was not converted as it has positional parameters which can't be automatically converted. Source: app/templates/about.hbs

@@ -28,7 +28,7 @@
           </div>
           <div class="post-card-footer small text-muted">
             <span>
-              {{link-to 'View Post' 'viewpost' post.id}}
+              <LinkTo @route="viewpost" @model={{post.id}}>View Post</LinkTo>
             </span>
             <span>{{to-date-string  post.createdtime}}</span>
           </div>

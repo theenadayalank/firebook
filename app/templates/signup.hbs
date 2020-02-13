@@ -11,7 +11,7 @@
             <label>First Name</label>
           </div>
           <div class="col-sm-6">
-            {{input type="text" class="form-control" value=firstName placeholder="First Name"}}
+            <Input @type="text" class="form-control" @value={{firstName}} placeholder="First Name" />
           </div>
         </div><br>
         <div class="row" style="margin-top:5px;">
@@ -20,7 +20,7 @@
             <label>Last Name</label>
           </div>
           <div class="col-sm-6">
-            {{input type="text" class="form-control" value=lastName placeholder="Last Name"}}
+            <Input @type="text" class="form-control" @value={{lastName}} placeholder="Last Name" />
           </div>
         </div><br>
         <div class="row" style="margin-top:5px;">
@@ -29,7 +29,7 @@
             <label>Mobile</label>
           </div>
           <div class="col-sm-6">
-            {{input type="text" class="form-control" value=mobile placeholder="Mobile"}}
+            <Input @type="text" class="form-control" @value={{mobile}} placeholder="Mobile" />
           </div>
         </div><br>
         <div class="row" style="margin-top:5px;">
@@ -38,7 +38,7 @@
             <label>Address</label>
           </div>
           <div class="col-sm-6">
-            {{textarea type="text" class="form-control" value=address placeholder="Address"}}
+            <Textarea @type="text" class="form-control" @value={{address}} placeholder="Address" />
           </div>
         </div><br>
         <div class="row" style="margin-top:5px;">
@@ -47,7 +47,7 @@
             <label>Email</label>
           </div>
           <div class="col-sm-6">
-            {{input type="text" class="form-control" value=email placeholder="Email"}}
+            <Input @type="text" class="form-control" @value={{email}} placeholder="Email" />
           </div>
         </div><br>
         <div class="row" style="margin-top:5px;">
@@ -56,13 +56,13 @@
             <label>Password</label>
           </div>
           <div class="col-sm-6">
-            {{input type="password" class="form-control disabled" value=password placeholder="Password"}}
+            <Input @type="password" class="form-control disabled" @value={{password}} placeholder="Password" />
           </div>
         </div><br>
         <div class="text-center">
         <button type="submit" class="btn btn-outline-info {{if isLoading 'disabled'}}"  {{action "createUser"}}>Submit</button><br><br>
         <div>
-          Already having an account? Click {{#link-to 'login'}}here{{/link-to}}
+          Already having an account? Click <LinkTo @route="login">here</LinkTo>
         </div>
       </div><br><br>
       </div>

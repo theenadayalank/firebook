@@ -13,7 +13,7 @@
         <label>Title</label>
       </div>
       <div class="col-sm-4">
-        {{input value=title placeholder="Title" required=true}}
+        <Input @value={{title}} placeholder="Title" required={{true}} />
       </div>
       <div class="col-sm-2"></div>
     </div><br>
@@ -24,7 +24,7 @@
         <label>Content</label>
       </div>
       <div class="col-sm-4">
-        {{textarea value=body placeholder="Body" rows="10" cols="50"  required=true}}
+        <Textarea @value={{body}} placeholder="Body" @rows="10" @cols="50" required={{true}} />
       </div>
       <div class="col-sm-2"></div>
     </div><br><br>
